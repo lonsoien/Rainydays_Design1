@@ -1,7 +1,118 @@
-.logo {
+@font-face {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    src: url(../Rainydays_Design1/Lato/Lato-Bold.ttf);
+    src: url(../Rainydays_Design1/Megrim/Megrim-Regular.ttf);
+}
+
+/* Header and Footer on Page
+ ---------------------*/
+
+ .headerimage {
     max-width: 100%;
 }
 
-.icon {
+a:hover {
+    text-decoration: none;
+}
+
+header, footer {
+    background: #c7d7d9;
+    font-family: "lato", Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    text-align: center;
+    background: #c7d7d9;
+    height: 10vh;
+    padding: 10px;
+}
+
+.menuicon {
     max-width: 2%;
+    padding: 5px;
+    float: right;
+    display: inline-block;
+}
+
+.menu {
+    color: #0A3641;
+    display: inline-block;
+    margin: 10px;
+}
+
+#Salemenu {
+    color: #d97a15;
+}
+
+ul {
+    padding: 10px;
+    margin: 5px;
+}
+
+li {
+    display: inline;
+}
+
+nav a {
+    padding: 5px;
+}
+
+/* Body and main on page
+ -----------------*/
+
+body{
+    font-family: 'Lato', arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Lato', arial, sans-serif;
+    font size: 16px;
+}
+
+.products {
+position: relative;
+}
+
+.couple {
+background-image: url("images/couple_mountains.jpg");
+background-size: cover;
+min-height: 70vh;
+}
+
+h3 {
+font-family: 'Megrim', cursive;
+color: #d97a15;
+position: relative;
+bottom: 10px;
+left: 400px;
+top: 100px; 
+font-size: 50px;
+}
+
+h4 {
+    font-family: 'Megrim', cursive;
+    color: #d97a15;
+    position: relative;
+    bottom: 10px;
+    left: 550px;
+    top: 80px; 
+    font-size: 40px;
+}
+
+.cta {
+background-color: #c7d7d9;
+color: #0a3641;
+opacity: 0.6;
+font-size: 0,8em;
+text-transform: uppercase;
+padding: 10px 50px;
+border-radius: 10px;
+}
+
+.shop_now {
+position: relative;
+bottom: 10px;
+left: 600px;
+top: 100px;
 }
