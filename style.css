@@ -65,13 +65,15 @@ body{
 }
 
 h2 {
-    text-align: center;
+   text-align: center;
+   padding: 20px;
     font-family: 'Lato', arial, sans-serif;
-    font size: 16px;
+    font-size: 18px;
 }
 
-.products {
-position: relative;
+.container {
+    display: flex;
+    justify-content: space-evenly
 }
 
 .couple {
@@ -103,11 +105,32 @@ h4 {
 .cta {
 background-color: #c7d7d9;
 color: #0a3641;
-opacity: 0.6;
+opacity: 0.8;
 font-size: 0,8em;
 text-transform: uppercase;
-padding: 10px 50px;
+padding: 10px 30px;
 border-radius: 10px;
+}
+
+.button1 {
+    position: relative;
+    bottom: 5px;
+    left: 180px;
+    top: -50px;  
+}
+
+.button2 {
+    position: relative;
+    bottom: 5x;
+    left: 630px;
+    top: -70px;
+}
+
+.button3 {
+    position: relative;
+    bottom: 10px;
+    left: 870px;
+    top: -70px;
 }
 
 .shop_now {
