@@ -122,15 +122,15 @@ border-radius: 10px;
 .button2 {
     position: relative;
     bottom: 5x;
-    left: 630px;
-    top: -70px;
+    left: 420px;
+    top: -50px;
 }
 
 .button3 {
     position: relative;
-    bottom: 10px;
-    left: 870px;
-    top: -70px;
+    bottom: 5px;
+    left: 670px;
+    top: -50px;
 }
 
 .shop_now {
