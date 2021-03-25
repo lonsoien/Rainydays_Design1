@@ -37,7 +37,6 @@ header, footer {
 .menu {
     color: #0A3641;
     display: inline-block;
-    margin: 10px;
 }
 
 #Salemenu {
@@ -46,7 +45,7 @@ header, footer {
 
 ul {
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
 }
 
 li {
@@ -60,14 +59,13 @@ nav a {
 /* Body and main on page
  -----------------*/
 
-body{
+body {
     font-family: 'Lato', arial, sans-serif;
 }
 
 h2 {
    text-align: center;
    padding: 20px;
-    font-family: 'Lato', arial, sans-serif;
     font-size: 18px;
 }
 
@@ -131,6 +129,7 @@ border-radius: 10px;
     bottom: 5px;
     left: 670px;
     top: -50px;
+    display: inline-block;
 }
 
 .shop_now {
@@ -138,4 +137,19 @@ position: relative;
 bottom: 10px;
 left: 600px;
 top: 100px;
+}
+
+/* Bestseller home page test */ 
+
+
+
+
+/* Meta style on site 
+------------------------*/
+
+@media only screen and (min-width: 600px) {
+.container {
+    flex-direction: row; {
+
+    }
 }
