@@ -28,15 +28,15 @@ header, footer {
 }
 
 .menuicon {
-    max-width: 2%;
-    padding: 5px;
+    max-width: 25px;
+    padding: 10px;
     float: right;
     display: inline-block;
+    margin: -5px;
 }
 
 .menu {
-    color: #0A3641;
-    display: inline-block;
+    color: #0A3641; 
 }
 
 #Salemenu {
@@ -49,7 +49,7 @@ ul {
 }
 
 li {
-    display: inline;
+display: inline;
 }
 
 nav a {
@@ -63,41 +63,40 @@ body {
     font-family: 'Lato', arial, sans-serif;
 }
 
-h2 {
+h1 {
    text-align: center;
-   padding: 20px;
-    font-size: 18px;
+   padding: 10px;
+   font-size: 18px;
 }
 
 .container {
-    display: flex;
-    justify-content: space-evenly
+    display: grid;
+    display-grid-column: 1fr; 
+    margin: 10px
 }
 
-.couple {
-background-image: url("images/couple_mountains.jpg");
-background-size: cover;
-min-height: 70vh;
+.feature {
+   display: grid;
+   grid-template-columns: 1fr;
+   max-width: 1200px;
+   margin: 10px auto;
+   grid-gap: 30px;
+   align-items: center;
 }
 
-h3 {
-font-family: 'Megrim', cursive;
-color: #d97a15;
-position: relative;
-bottom: 10px;
-left: 400px;
-top: 100px; 
-font-size: 50px;
+.feature img {
+    height: 350px;
+    width: 350px;
 }
 
-h4 {
-    font-family: 'Megrim', cursive;
-    color: #d97a15;
-    position: relative;
-    bottom: 10px;
-    left: 550px;
-    top: 80px; 
-    font-size: 40px;
+.products {
+display: grid;
+grid-template-columns: 100px, 100px;
+margin: 20px;
+}
+
+.products img {
+    grid-column: -1/1;
 }
 
 .cta {
@@ -106,50 +105,72 @@ color: #0a3641;
 opacity: 0.8;
 font-size: 0,8em;
 text-transform: uppercase;
-padding: 10px 30px;
+padding: 10px 20px;
 border-radius: 10px;
+margin: 10px;
+text-align: center;
 }
 
-.button1 {
-    position: relative;
-    bottom: 5px;
-    left: 180px;
-    top: -50px;  
+.couple {
+background-image: url("images/couple_mountains.jpg");
+background-size: cover;
+min-height: 70vh;
+position: relative;
 }
 
-.button2 {
-    position: relative;
-    bottom: 5x;
-    left: 420px;
-    top: -50px;
+h3 {
+    font-family: 'Megrim', cursive;
+    color: #d97a15;
+    position: absolute;
+    bottom: 0px;
+    left: 400px;
+    top: 30px; 
+    font-size: 50px;
 }
 
-.button3 {
-    position: relative;
-    bottom: 5px;
-    left: 670px;
-    top: -50px;
-    display: inline-block;
-}
+h4 {
+    font-family: 'Megrim', cursive;
+    color: #d97a15;
+    position: absolute;
+    bottom: 10px;
+    left: 500px;
+    top: 130px; 
+    font-size: 40px;
+    }
 
 .shop_now {
-position: relative;
+position: absolute;
 bottom: 10px;
 left: 600px;
-top: 100px;
+top: 320px;
 }
-
-/* Bestseller home page test */ 
-
-
 
 
 /* Meta style on site 
 ------------------------*/
+/* max-width 768px and smaller (most tablets)
+/* min-width: 769px and larger (most pc and landscape tablets) */
 
-@media only screen and (min-width: 600px) {
-.container {
-    flex-direction: row; {
-
+@media (min-width: 700px){
+    .feature {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   max-width: 1200px;
+   margin: 10px auto;
+   grid-gap: 30px;
+   align-items: center;
     }
+
+    .products {
+        display: grid;
+        grid-template-columns: 100px, 100px;
+        margin: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 10px
+        }
 }
+
