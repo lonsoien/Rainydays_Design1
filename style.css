@@ -28,7 +28,7 @@ header, footer {
 }
 
 .menuicon {
-    max-width: 25px;
+    max-width: 24px;
     padding: 10px;
     float: right;
     display: inline-block;
@@ -73,6 +73,7 @@ h1 {
     display: grid;
     display-grid-column: 1fr; 
     margin: 10px
+    
 }
 
 .feature {
@@ -81,7 +82,6 @@ h1 {
    max-width: 1200px;
    margin: 10px auto;
    grid-gap: 30px;
-   align-items: center;
 }
 
 .feature img {
@@ -91,7 +91,7 @@ h1 {
 
 .products {
 display: grid;
-grid-template-columns: 100px, 100px;
+grid-template-columns: 200px;
 margin: 20px;
 }
 
@@ -123,9 +123,9 @@ h3 {
     color: #d97a15;
     position: absolute;
     bottom: 0px;
-    left: 400px;
+    left: 120px;
     top: 30px; 
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h4 {
@@ -133,16 +133,16 @@ h4 {
     color: #d97a15;
     position: absolute;
     bottom: 10px;
-    left: 500px;
-    top: 130px; 
-    font-size: 40px;
+    left: 150px;
+    top: 90px; 
+    font-size: 30px;
     }
 
 .shop_now {
 position: absolute;
 bottom: 10px;
-left: 600px;
-top: 320px;
+left: 200px;
+top: 200px;
 }
 
 
@@ -151,7 +151,7 @@ top: 320px;
 /* max-width 768px and smaller (most tablets)
 /* min-width: 769px and larger (most pc and landscape tablets) */
 
-@media (min-width: 700px){
+@media (min-width: 750px){
     .feature {
    display: grid;
    grid-template-columns: repeat(3,1fr);
@@ -172,5 +172,39 @@ top: 320px;
             justify-content: space-evenly;
             margin: 10px
         }
+
+        .couple {
+            background-image: url("images/couple_mountains.jpg");
+            background-size: cover;
+            min-height: 70vh;
+            position: relative;
+            }
+
+            h3 {
+                font-family: 'Megrim', cursive;
+                color: #d97a15;
+                position: absolute;
+                bottom: 0px;
+                left: 200px;
+                top: -5px; 
+                font-size: 50px;
+            }
+            
+            h4 {
+                font-family: 'Megrim', cursive;
+                color: #d97a15;
+                position: absolute;
+                bottom: 10px;
+                left: 230px;
+                top: 80px; 
+                font-size: 40px;
+                }
+            
+            .shop_now {
+            position: absolute;
+            bottom: 10px;
+            left: 500px;
+            top: 250px;
+            }
 }
 
