@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    src: url(../Rainydays_Design1/Lato/Lato-Bold.ttf);
+    src: url(../Rainydays_Design1/Megrim/Megrim-Regular.ttf);
+}
+
+/* Header and Footer on Page
+ ---------------------*/
+
+ .headerimage {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header, footer {
+    background: #c7d7d9;
+    font-family: "lato", Arial, Helvetica, sans-serif;
+}
+
+.footer p {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    background: #c7d7d9;
+    height: 2vh;
+    padding: 4px;
+}
+
+.menuicon {
+    max-width: 24px;
+    padding: 10px;
+    float: right;
+    display: inline-block;
+    margin: -5px;
+}
+
+.menu {
+    color: #0A3641; 
+}
+
+#Salemenu {
+    color: #d97a15;
+}
+
+ul {
+    padding: 15px;
+    margin: -3px;
+}
+
+li {
+display: inline;
+}
+
+nav a {
+    padding: 10px;
+}
+
+/* Body and main on page
+ -----------------*/
+
+body {
+    font-family: 'Lato', arial, sans-serif;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    'header header'
+    'aside main'
+    'footer footer'
+    ;
+}
+
+main, aside {
+    background: white;
+}
+
+header{grid-area: header;}
+main{grid-area: main;}
+aside{grid-area: aside;}
+footer{grid-area:footer;}
+
+.productlist {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 5px;
+}
+
+h2 {
+    font-family: 'Megrim', cursive;
+    color: #d97a15;
+    font-size: 25px;
+    padding: 25px;
+    text-align: center;
+    margin: 30px;
+}
+
+h3 {
+    font-family: "lato", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+aside p {
+    font-size: 15px;
+    color: black;
+    }
+
+p {
+    color: #d97a15;
+    font-size: 13px;
+}
+

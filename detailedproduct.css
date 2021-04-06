@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    src: url(../Rainydays_Design1/Lato/Lato-Bold.ttf);
+    src: url(../Rainydays_Design1/Megrim/Megrim-Regular.ttf);
+}
+
+/* Header and Footer on Page
+ ---------------------*/
+
+ .headerimage {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header, footer {
+    background: #c7d7d9;
+    font-family: "lato", Arial, Helvetica, sans-serif;
+}
+
+.footer p {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    background: #c7d7d9;
+    height: 2vh;
+    padding: 4px;
+}
+
+.menuicon {
+    max-width: 24px;
+    padding: 10px;
+    float: right;
+    display: inline-block;
+    margin: -5px;
+}
+
+.menu {
+    color: #0A3641; 
+}
+
+#Salemenu {
+    color: #d97a15;
+}
+
+ul {
+    padding: 15px;
+    margin: -3px;
+}
+
+li {
+display: inline;
+}
+
+nav a {
+    padding: 10px;
+}
+
+/* Body and main on page
+ -----------------*/
+
+body {
+    font-family: 'Lato', arial, sans-serif;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    'header header'
+    'aside main'
+    'footer footer'
+    ;
+}
+
+header{grid-area: header;}
+main{grid-area: main;}
+aside{grid-area: aside;}
+footer{grid-area:footer;}
+
+.container {
+display: flex;
+margin: 20px;
+}
+
+.text p {
+    color: #d97a15;
+    margin: 5px;
+}
+
+h2 {
+    color: #d97a15;
+}
+
+.sidetext {
+    margin: 50px;
+    padding: 25px;
+}
+
+.cta {
+    background-color: #c7d7d9;
+    color: #0a3641;
+    opacity: 0.8;
+    font-size: 0,8em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    }
+
+.addto {
+    padding-top: 25px;
+    }
+
+aside img {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 100px;
+    padding: 10px;
+}
