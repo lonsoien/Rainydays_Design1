@@ -92,6 +92,15 @@ h2 {
     color: #d97a15;
 }
 
+.color {
+max-width: 170px;
+margin-bottom: 10px;
+}
+
+.sizes {
+    max-width: 200px;
+}
+
 .sidetext {
     margin: 50px;
     padding: 25px;
