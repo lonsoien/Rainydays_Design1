@@ -52,6 +52,7 @@
     }
 
     img, h1 {
+        font-family: "lato", Arial, Helvetica, sans-serif;
         margin: 20px;
         font-size: 20px;
     }
@@ -79,6 +80,7 @@
     }
 
     .cta {
+        font-family: "lato", Arial, Helvetica, sans-serif;
         position: relative;
         bottom: -250px;
         left: 50px;
