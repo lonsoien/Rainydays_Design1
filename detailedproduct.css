@@ -83,6 +83,15 @@ display: flex;
 margin: 20px;
 }
 
+.link {
+    color: black;
+}
+
+.footer {
+    text-align: center;
+    padding: 25px;
+}
+
 .text p {
     color: #d97a15;
     margin: 5px;
