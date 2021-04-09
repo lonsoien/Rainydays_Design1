@@ -24,6 +24,13 @@
         justify-content: space-around;
     }
 
+    .menuicon {
+       max-width: 35px;
+       position: absolute;
+       top: 20px;
+       right: 30px;
+    }
+
     .text {
         position: absolute;
         top: 60px;
@@ -46,6 +53,11 @@
         margin: 100px;
         padding: 30px;
         text-align: left;
+    }
+
+    h1, h2, p {
+        font-family: "Lato", Arial, Helvetica, sans-serif;
+        color: #313d40;
     }
 
     
