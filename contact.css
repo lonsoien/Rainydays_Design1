@@ -21,7 +21,7 @@
 
     main {
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
     }
 
     .menuicon {
@@ -65,4 +65,28 @@
 /* max-width 768px and smaller (most tablets)
 /* min-width: 769px and larger (most pc and landscape tablets) */
 
-    
+@media (max-width: 1360px) {
+    .text {
+        position: absolute;
+        top: 50px;
+        left: 5px;
+        margin: 10px;
+        padding: 10px;
+        max-width: 550px;
+        text-align: left;
+        background-color: #c7d7d9;
+        opacity: 0.8;
+    }
+
+    .text2 {
+        position: absolute;
+        top: 370px;
+        left: 10px;
+        max-width: 500px;
+        background-color: #c7d7d9;
+        opacity: 0.8;
+        margin: 5px;
+        padding: 10px;
+        text-align: left;
+    }
+}
