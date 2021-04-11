@@ -133,3 +133,83 @@ p {
 ------------------------*/
 /* max-width 768px and smaller (most tablets)
 /* min-width: 769px and larger (most pc and landscape tablets) */
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .productlist { 
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0px;
+    }
+
+    img {
+        max-width: 120px;
+    }
+
+    aside {
+        font-size: 15px;
+        color: black;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width: 599px) {
+    ul {
+        padding: 15px;
+        margin: -3px;
+    }
+    
+    nav a {
+        padding: 3px;
+        font-size: 12px;
+    }
+    
+    .menuicon {
+        max-width: 15px;
+        padding: 10px;
+        float: right;
+        display: inline-block;
+        margin: -5px;
+    }
+
+    .productlist {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+        }
+
+    aside {
+        font-size: 10px;
+        color: black;
+    }
+
+    h1, h2, h3, h4 {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        font-family: 'Lato', arial, sans-serif;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+        'header header'
+        'aside aside'
+        'main main'
+        'footer footer'
+        ;
+    }
+}
