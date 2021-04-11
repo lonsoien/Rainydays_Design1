@@ -29,12 +29,26 @@ header, footer {
     padding: 25px;
 }
 
+li {
+    display: inline;
+}
+
 .menuicon {
-    max-width: 24px;
+    max-width: 25px;
     padding: 10px;
     float: right;
     display: inline-block;
     margin: -5px;
+}
+
+ul {
+    padding: 15px;
+    margin: -3px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 16px;
 }
 
 .menu {
@@ -43,19 +57,6 @@ header, footer {
 
 #Salemenu {
     color: #d97a15;
-}
-
-ul {
-    padding: 15px;
-    margin: -3px;
-}
-
-li {
-display: inline;
-}
-
-nav a {
-    padding: 10px;
 }
 
 /* Body and main on page
@@ -68,33 +69,33 @@ body {
 h1 {
    text-align: center;
    padding: 10px;
-   font-size: 18px;
+   font-size: 15px;
 }
 
 .container {
-    display: grid;
-    display-grid-column: 1fr; 
+    display: flex;
+    justify-content: space-evenly;
     margin: 10px
-    
 }
 
 .feature {
-   display: grid;
-   grid-template-columns: 1fr;
-   max-width: 1200px;
-   margin: 10px auto;
-   grid-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    margin: 10px auto;
+    grid-gap: 30px;
+    align-items: center;
 }
 
 .feature img {
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
 }
 
 .products {
-display: grid;
-grid-template-columns: 200px;
-margin: 20px;
+    display: grid;
+    grid-template-columns: 200px;
+    margin: 20px;
 }
 
 .products img {
@@ -102,22 +103,22 @@ margin: 20px;
 }
 
 .cta {
-background-color: #c7d7d9;
-color: #0a3641;
-opacity: 0.8;
-font-size: 0,8em;
-text-transform: uppercase;
-padding: 10px 20px;
-border-radius: 10px;
-margin: 10px;
-text-align: center;
+    background-color: #c7d7d9;
+    color: #0a3641;
+    opacity: 0.8;
+    font-size: 0,8em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
 }
 
 .couple {
-background-image: url("images/couple_mountains.jpg");
-background-size: cover;
-min-height: 70vh;
-position: relative;
+    background-image: url("images/couple_mountains.jpg");
+    background-size: cover;
+    min-height: 70vh;
+    position: relative;
 }
 
 h3 {
@@ -125,26 +126,26 @@ h3 {
     color: #d97a15;
     position: absolute;
     bottom: 0px;
-    left: 120px;
-    top: 30px; 
-    font-size: 40px;
+    left: 200px;
+    top: -5px; 
+    font-size: 50px;
 }
-
+        
 h4 {
     font-family: 'Megrim', cursive;
     color: #d97a15;
     position: absolute;
     bottom: 10px;
-    left: 150px;
-    top: 90px; 
-    font-size: 30px;
-    }
-
+    left: 230px;
+    top: 80px; 
+    font-size: 40px;
+}
+        
 .shop_now {
-position: absolute;
-bottom: 10px;
-left: 200px;
-top: 200px;
+    position: absolute;
+    bottom: 10px;
+    left: 500px;
+    top: 250px;
 }
 
 
@@ -153,60 +154,91 @@ top: 200px;
 /* max-width 768px and smaller (most tablets)
 /* min-width: 769px and larger (most pc and landscape tablets) */
 
-@media (min-width: 750px){
+@media (max-width: 699px) {
     .feature {
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   max-width: 1200px;
-   margin: 10px auto;
-   grid-gap: 30px;
-   align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 1200px;
+        margin: 10px auto;
+        grid-gap: 30px;
+    }
+
+    ul {
+        padding: 15px;
+        margin: -3px;
+    }
+    
+    nav a {
+        padding: 3px;
+        font-size: 12px;
+    }
+    
+    .menuicon {
+        max-width: 15px;
+        padding: 10px;
+        float: right;
+        display: inline-block;
+        margin: -5px;
     }
 
     .products {
         display: grid;
         grid-template-columns: 100px, 100px;
         margin: 20px;
-        }
+    }
 
-        .container {
-            display: flex;
-            justify-content: space-evenly;
-            margin: 10px
-        }
+    .container {
+        display: grid;
+        grid-column: 1fr; 
+        margin: 5px
+    }
 
-        .couple {
-            background-image: url("images/couple_mountains.jpg");
-            background-size: cover;
-            min-height: 70vh;
-            position: relative;
-            }
+    .couple {
+        background-image: url("images/couple_mountains.jpg");
+        background-size: cover;
+        min-height: 40vh;
+        position: relative;
+    }
 
-            h3 {
-                font-family: 'Megrim', cursive;
-                color: #d97a15;
-                position: absolute;
-                bottom: 0px;
-                left: 200px;
-                top: -5px; 
-                font-size: 50px;
-            }
-            
-            h4 {
-                font-family: 'Megrim', cursive;
-                color: #d97a15;
-                position: absolute;
-                bottom: 10px;
-                left: 230px;
-                top: 80px; 
-                font-size: 40px;
-                }
-            
-            .shop_now {
-            position: absolute;
-            bottom: 10px;
-            left: 500px;
-            top: 250px;
-            }
+    h3 {
+        font-family: 'Megrim', cursive;
+        color: #d97a15;
+        position: absolute;
+        bottom: 0px;
+        left: 120px;
+        top: 30px; 
+        font-size: 40px;
+    }
+        
+    h4 {
+        font-family: 'Megrim', cursive;
+        color: #d97a15;
+        position: absolute;
+        bottom: 10px;
+        left: 150px;
+        top: 90px; 
+        font-size: 30px;
+    }
+        
+    .shop_now {
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    top: 200px;
+    }
 }
 
+@media (min-width: 700px) and (max-width: 900px) {
+    .feature {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+        margin: 1px auto;
+        grid-gap: 0px;
+    }
+
+    .feature img {
+        height: 200px;
+        width: 200px;
+    }
+}
