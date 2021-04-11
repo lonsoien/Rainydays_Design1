@@ -142,3 +142,100 @@ aside img {
 ------------------------*/
 /* max-width 768px and smaller (most tablets)
 /* min-width: 769px and larger (most pc and landscape tablets) */
+
+@media (max-width: 1200px) {
+    img {
+        max-width: 300px;
+    }
+    
+    h1, h2 {
+        font-size: 15px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1049px) {
+    .color {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+        
+    .sizes {
+        max-width: 100px;
+    }
+
+    body {
+        font-family: 'Lato', arial, sans-serif;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: auto 1fr;
+        grid-template-areas:
+        'header header'
+        'main main'
+        'aside aide'
+        'footer footer'
+        ;
+    }
+
+    aside img {
+        display: inline;
+        margin: 10px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 660px) {
+    ul {
+        padding: 15px;
+        margin: -3px;
+    }
+        
+    nav a {
+        padding: 3px;
+        font-size: 12px;
+    }
+        
+    .menuicon {
+        max-width: 15px;
+        padding: 10px;
+        float: right;
+        display: inline-block;
+        margin: -5px;
+    }
+
+    img {
+        max-width: 140px;
+    }
+
+    aside img {
+        display: inline;
+        max-width: 110px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .cta {
+        background-color: #c7d7d9;
+        color: #0a3641;
+        opacity: 0.8;
+        font-size: 0,8em;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin: -150px;
+        text-align: center;
+        }
+    
+    .addto {
+        padding-top: 20px;
+        }
+
+        .sidetext {
+            margin: 1px;
+            padding: 20px;
+            margin-top: -35px;
+        }
+}
+
